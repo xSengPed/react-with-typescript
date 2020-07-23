@@ -1,0 +1,14 @@
+.profile-picture {
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 5%;
+}
+.avatar {
+    border-style: solid;
+    border-width: 7px;
+}
+
+.profile-picture-caption {
+    /* border-style: solid; */
+    margin-top: 20px;
+}
