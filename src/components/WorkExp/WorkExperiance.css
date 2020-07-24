@@ -1,5 +1,5 @@
 .card{
-    width: 400px;
+    width: 300px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
@@ -26,13 +26,13 @@
 }
 #status {
     font-weight: lighter;
-    font-size: 18px;
+    font-size: 14px;
 }
 #position {
     font-weight: lighter;
-    font-size: 18px;
+    font-size: 14px;
 }
 #period{
     font-weight: lighter;
-    font-size: 20px;
+    font-size: 14px;
 }

@@ -1,0 +1,35 @@
+.repo-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding : 10px;
+    width: 200px;
+    height: 100px;
+    
+    /* border-style: solid; */
+    /* border-radius: 5px; */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 5px;
+}
+
+.repo-card-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items : flex-start;
+    justify-content: center;
+}
+
+#rep-title {
+    font-size: 12px;
+    font-weight: 600;
+}
+#rep-lang {
+    font-weight: bold;
+    font-size: 12px;
+}
+.centered-title {
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}

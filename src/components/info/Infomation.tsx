@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import './Infomation.css'
-import { Avatar, Divider, Row, Col } from 'antd'
+import { Avatar, Divider} from 'antd'
 
 
 // https://api.github.com/users/KalimaPz
