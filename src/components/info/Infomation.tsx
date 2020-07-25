@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import './Infomation.css'
 import { Avatar, Divider} from 'antd'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init()
 
 // https://api.github.com/users/KalimaPz
 // if you create props you must initialize props interface
@@ -37,7 +39,7 @@ class Information extends Component<{}, apiDataState>{
     render() {
         return (
             <div>
-                <div className='profile-picture'>
+                <div className='profile-picture' data-aos='fade-up' data-aos-duration='1500'>
                     <Avatar className='avatar' src={this.state.image_uri} size={200}></Avatar>
                     <div className='profile-picture-caption'>
                         <h1 id='name-univ-and-faculty'><b>{this.state.name}</b></h1>
@@ -51,9 +53,9 @@ class Information extends Component<{}, apiDataState>{
 
                 </div>
                 <div>
-                    <div><Divider>PROFILE</Divider></div>
+                    <div data-aos='zoom-in' data-aos-duration='1500'><Divider>PROFILE</Divider></div>
                     <div className='info-area'>
-                        <div className='highlight about content'>
+                        <div className='highlight about content' data-aos='fade-right' data-aos-duration='1500'>
                             <p className='header-centered'><h2><b>ALL ABOUT MYSELF</b></h2></p>
                             <p>Date of Birth : 1 January 1997</p>
                             <p>Major Branch : Information Engineer</p>
@@ -61,7 +63,7 @@ class Information extends Component<{}, apiDataState>{
                             <p>Lifetyle : Music , Gaming , Reading , Coding</p>
                             <p>Interesting : Database , Web Dev , Mobile App , Object-Oreinted Programing</p>
                         </div>
-                        <div className='highlight bio content'>
+                        <div className='highlight bio content' data-aos='fade-left' data-aos-duration='1500'>
                             <p className='header-centered'><h2><b>MY STORY</b></h2></p>
                             <p>
                                 Hi!  You can call me Phone. I was born in 1997. I'm newbie developer that interesting about moblie appication and web application. I've been lived in Phuket for 5 years.

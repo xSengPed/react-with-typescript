@@ -10,46 +10,49 @@ class GraphView extends Component {
     componentDidMount() {
         let chart = am4core.create("chartdiv", am4plugins_forceDirected.ForceDirectedTree);
         let series = chart.series.push(new am4plugins_forceDirected.ForceDirectedSeries());
+        let main_node_size = 800;
+        let sub_node_size = 600;
+        let last_node_size = 400;
         series.data = [
             {
                 name: 'Front-End',
-                value: 200,
+                value: main_node_size,
                 children: [
                     {
                         name: 'Basic',
-                        value: 100,
+                        value: sub_node_size,
                         children: [
                             {
                                 name: 'HTML 5',
-                                value: 50,
+                                value: last_node_size,
                             },
                             {
                                 name: 'Laravel',
-                                value: 50,
+                                value: last_node_size,
                             },
                             {
                                 name: 'Vue',
-                                value: 50,
+                                value: last_node_size,
                             },
                         ],
                     },
                     {
                         name: 'Intermediate',
-                        value: 100,
+                        value: sub_node_size,
                         children: [
                             {
                                 name: 'React',
-                                value: 50,
+                                value: last_node_size,
                             },
                         ]
                     },
                     {
                         name: 'Expert',
-                        value: 100,
+                        value: sub_node_size,
                         children: [
                             {
                                 name: 'Flutter',
-                                value: 50,
+                                value: last_node_size,
                             },
                         ]
                     },
@@ -57,23 +60,23 @@ class GraphView extends Component {
             },
             {
                 name: 'Back-End',
-                value: 200,
+                value: main_node_size,
                 children: [
                     {
                         name: 'Basic',
-                        value: 100,
+                        value: sub_node_size,
                         children: [
                             {
                                 name: 'Node.js',
-                                value: 50,
+                                value: last_node_size,
                             },
                             {
                                 name: 'Springboot',
-                                value: 50,
+                                value: last_node_size,
                             },
                             {
                                 name: 'Flask',
-                                value: 50,
+                                value: last_node_size,
                             },
                         ],
                     },
@@ -81,63 +84,63 @@ class GraphView extends Component {
             },
             {
                 name: 'Other',
-                value: 200,
+                value: main_node_size,
                 children: [
                     {
                         name: 'Basic',
-                        value: 100,
+                        value: sub_node_size,
                         children: [
                             {
                                 name: 'Go',
-                                value: 50,
+                                value: last_node_size,
                             },
                             {
                                 name: 'Php',
-                                value: 50,
+                                value: last_node_size,
                             },
                             {
                                 name: 'Docker',
-                                value: 50,
+                                value: last_node_size,
                             },
                         ],
                     },
                     {
                         name: 'Intermediate',
-                        value: 100,
+                        value: sub_node_size,
                         children: [
                             {
                                 name: 'C',
-                                value: 50,
+                                value: last_node_size,
                             },
                             {
                                 name: 'Typescript',
-                                value: 50,
+                                value: last_node_size,
                             },
                             {
                                 name: 'Python',
-                                value: 50,
+                                value: last_node_size,
                             },
                             {
                                 name: 'Git',
-                                value: 50,
+                                value: last_node_size,
                             },
                         ],
                     },
                     {
                         name: 'Expert',
-                        value: 100,
+                        value: sub_node_size,
                         children: [
                             {
                                 name: 'Dart',
-                                value: 50,
+                                value: last_node_size,
                             },
                             {
                                 name: 'Java',
-                                value: 50,
+                                value: last_node_size,
                             },
                             {
                                 name: 'Shell',
-                                value: 50,
+                                value: last_node_size,
                             },
                         ],
                     },

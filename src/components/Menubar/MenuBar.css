@@ -1,0 +1,20 @@
+.menu-frame {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    max-height: fit-content;
+    /* height: 100px; */
+    /* background-color: #13274F; */
+    border-style: solid;
+}
+.menu-items {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+   
+}
+.item {
+    vertical-align: middle;
+}
