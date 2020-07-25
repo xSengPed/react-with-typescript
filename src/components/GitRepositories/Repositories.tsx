@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './repo.css'
 import axios from 'axios'
-import { Divider , Button} from 'antd';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init()
 interface RepoState {
     repo: any[]
 }
@@ -27,12 +28,12 @@ class Repositories extends Component<{}, RepoState>{
         return (
 
             <div>
-                <div style={{textAlign:'center'}}><h1><b>MY CODE REPOSITORIES</b></h1></div>
-                <div className='repo-card-area'>
+                <div id='header-rep' data-aos='fade-up' data-aos-duration='2000' style={{textAlign:'center'}}><h1><b>MY CODE REPOSITORIES</b></h1></div>
+                <div className='repo-card-area' data-aos='zoom-in' data-aos-duration='2000'>
                     {
                         repo.map((rep,index)=>{
                             return(
-                                <div key={index}>
+                                <div key={index} >
                                     <RepoCard projectName={rep.name} lang={rep.language} projectUri={rep.html_url} />
                                 </div>
                             )

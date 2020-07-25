@@ -14,6 +14,7 @@
 }
 
 .repo-card-area {
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-items : flex-start;
@@ -27,6 +28,9 @@
 #rep-lang {
     font-weight: bold;
     font-size: 12px;
+}
+#header-rep {
+    padding: 20px;
 }
 .centered-title {
     text-align: center;
