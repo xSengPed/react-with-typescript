@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import './Infomation.css'
 import { Avatar, Divider} from 'antd'
-import AOS from 'aos';
+// import AOS from 'aos';
 import 'aos/dist/aos.css';
-AOS.init()
+// AOS.init()
 
 // https://api.github.com/users/KalimaPz
 // if you create props you must initialize props interface

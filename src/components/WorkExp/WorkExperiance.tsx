@@ -1,9 +1,9 @@
 import React , {Component}from 'react';
 import './WorkExperiance.css'
 import {Card} from 'antd'
-import AOS from 'aos';
+// import AOS from 'aos';
 import 'aos/dist/aos.css';
-AOS.init()
+// AOS.init()
 
 interface WorkedProps {
     title: string, 

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './repo.css'
 import axios from 'axios'
-import AOS from 'aos';
+// import AOS from 'aos';
 import 'aos/dist/aos.css';
-AOS.init()
+// AOS.init()
 interface RepoState {
     repo: any[]
 }
