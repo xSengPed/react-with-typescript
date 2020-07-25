@@ -1,0 +1,39 @@
+.profile-picture {
+    text-align: center;
+    padding: 2%;
+}
+.avatar {
+    border-style: solid;
+    border-width: 7px;
+    
+}
+
+.profile-picture-caption {
+    
+    margin-top: 20px;
+    
+}
+.content {
+    font-size: 16px;
+}
+.info-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.highlight {
+    /* //border-style: solid; */
+    padding: 5%;
+}
+.bio {
+    max-width: 500px;
+}
+
+.header-centered {
+    text-align: center;
+}
+#name-univ-and-faculty {
+    color: black;
+    /* color: whitesmoke; */
+}
