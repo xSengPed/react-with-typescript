@@ -3,6 +3,9 @@ import './repo.css'
 import axios from 'axios'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Collapse } from 'antd'
+const { Panel } = Collapse;
+
 AOS.init()
 interface RepoState {
     repo: any[]
@@ -27,24 +30,26 @@ class Repositories extends Component<{}, RepoState>{
         console.log(repo)
         return (
 
-            <div>
-                <div id='header-rep' data-aos='fade-up' data-aos-duration='2000' style={{textAlign:'center'}}><h1><b>MY CODE REPOSITORIES</b></h1></div>
-                <div className='repo-card-area' data-aos='zoom-in' data-aos-duration='2000'>
-                    {
-                        repo.map((rep,index)=>{
-                            return(
-                                <div key={index} >
-                                    <RepoCard projectName={rep.name} lang={rep.language} projectUri={rep.html_url} />
-                                </div>
-                            )
-                        })
-                    }
-                    
+            <div data-aos='fade-up' data-aos-duration='2000'>
+                <div id='header-rep' style={{ textAlign: 'center' }}><h1><b>MY CODE REPOSITORIES</b></h1></div>
+                <div className='repo-card-area'>
+                    <Collapse accordion>
+                        <Panel header='Show All' key='1'>
+                            <div className='in-collapsed-card-layout'>
+                                {
+                                    repo.map((rep, index) => {
+                                        return (
+                                            <div key={index} >
+                                                <RepoCard projectName={rep.name} lang={rep.language} projectUri={rep.html_url} />
+                                            </div>
+                                        )
+                                    })
+                                }
+                            </div>
+                        </Panel>
+                    </Collapse>
                 </div>
             </div>
-            // 
-
-
         )
     }
 }

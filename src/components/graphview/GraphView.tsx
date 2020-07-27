@@ -34,6 +34,10 @@ class GraphView extends Component {
                                 name: 'Vue',
                                 value: last_node_size,
                             },
+                            {
+                                name: 'CSS 3',
+                                value: last_node_size,
+                            },
                         ],
                     },
                     {
