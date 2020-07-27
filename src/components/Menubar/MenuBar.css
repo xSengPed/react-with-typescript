@@ -1,20 +1,44 @@
 .menu-frame {
+    float: inline-start;
     display: flex;
+    padding: 10px;
     justify-content: flex-end;
     width: 100%;
     max-height: fit-content;
-    /* height: 100px; */
-    /* background-color: #13274F; */
-    border-style: solid;
+    background-color: #012169;
+    margin-bottom: 5%;
 }
 .menu-items {
-    
+    color: white;
+    width: 300px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    height: 100px;
-   
 }
 .item {
     vertical-align: middle;
+}
+
+#icon-github:hover {
+    transition: 0.4s ease-out 0.4s;
+    color: darkgrey;
+}
+#icon-gitlab:hover {
+    transition: 0.4s ease-out 0.4s;
+    color: rgb(217, 42, 28);
+}
+#icon-fbmessenger:hover {
+    transition: 0.4s ease-out 0.4s;
+    color: rgb(20, 95, 251)
+}
+#icon-instagram:hover {
+    transition: 0.4s ease-out 0.4s;
+    color: rgb(194, 4, 117);
+}
+
+.link
+{
+   color:white;
+   text-decoration: none; 
+   background-color: none;
 }

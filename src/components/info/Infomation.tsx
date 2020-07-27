@@ -53,7 +53,7 @@ class Information extends Component<{}, apiDataState>{
 
                 </div>
                 <div>
-                    <div data-aos='zoom-in' data-aos-duration='1500'><Divider>PROFILE</Divider></div>
+                    <div data-aos='zoom-in' data-aos-duration='1500'><Divider style={{fontSize:'24px' , fontWeight:'bold'}}>PROFILE</Divider></div>
                     <div className='info-area'>
                         <div className='highlight about content' data-aos='fade-right' data-aos-duration='1500'>
                             <p className='header-centered'><h2><b>ALL ABOUT MYSELF</b></h2></p>

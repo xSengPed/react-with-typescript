@@ -14,11 +14,8 @@
 }
 
 .repo-card-area {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-items : flex-start;
-    justify-content: center;
+   margin: 10px;
+   
 }
 
 #rep-title {
@@ -36,4 +33,10 @@
     text-align: center;
     padding: 20px;
     font-weight: bold;
+}
+.in-collapsed-card-layout {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
