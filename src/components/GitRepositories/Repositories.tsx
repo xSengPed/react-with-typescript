@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import './repo.css'
 import axios from 'axios'
 import 'aos/dist/aos.css';
-
+import {Collapse} from 'antd'
 interface RepoState {
     repo: any[]
 }
-
+const {Panel} = Collapse;
 class Repositories extends Component<{}, RepoState>{
     state: RepoState = {
         repo: []
