@@ -10,8 +10,8 @@ class Certificate extends Component {
                 <div><Divider style={{fontWeight:'bold',fontSize:'28px'}}>Certificate</Divider></div>
                 <div className='carousel-flex'>
                 <Carousel autoplay className='cert-carousel'>
-                    <div ><img src={NSC1} className="img"/></div>
-                    <div ><img src={NSC2} className="img"/></div>
+                    <div ><img alt="Not Found" src={NSC1} className="img"/></div>
+                    <div ><img alt="Not Found" src={NSC2} className="img"/></div>
                     
                 </Carousel>
                 </div>
