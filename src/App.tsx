@@ -3,7 +3,7 @@ import GraphView from './components/graphview/GraphView';
 import './App.css'
 import Information from './components/info/Infomation';
 import WorkExperiance from './components/WorkExp/WorkExperiance'
-import Repositories from './components/GitRepositories/Repositories';
+
 import MenuBar from './components/Menubar/MenuBar'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
