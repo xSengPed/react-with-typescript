@@ -19,7 +19,7 @@ class App extends Component {
                 <div data-aos='zoom-out' data-aos-duration='2000'><GraphView /> </div>
                 <div><WorkExperiance /></div>
                 <div data-aos='zoom-out' data-aos-duration='2000'><Certificate/></div>
-                <Repositories />
+                
             </div>
         )
     }
